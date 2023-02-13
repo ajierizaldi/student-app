@@ -103,7 +103,7 @@ module.exports = {
             });
     },
 
-    delete: (req, res) => {
+    destroy: (req, res) => {
         const id = req.params.id
 
         Todo.findByIdAndRemove(id, { useFindAndModify: false })
