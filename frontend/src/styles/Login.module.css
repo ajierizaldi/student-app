@@ -1,0 +1,206 @@
+.container {
+    display: block;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+}
+
+.flexLeft {
+    flex: 50%;
+    padding-left: 80px;
+    background-image: url("../../public/images/auth_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(360deg, #a06ece 50%, rgba(160, 110, 206, 0) 100%); */
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.flexRight {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    height: 100%;
+}
+
+.flexLeft div {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 452px;
+}
+
+.head {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 36px !important;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.input div {
+    display: flex;
+    flex-direction: column;
+}
+
+.input div label {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.input div input {
+    border: 2px solid #d0d0d0;
+    border-radius: 16px;
+    padding: 12px 16px;
+    color: #8a8a8a;
+}
+
+.input div input:focus {
+    color: #000000;
+    border: 2px solid #7126b5;
+}
+
+.forget {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7126b5;
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.forget a:hover {
+    color: #a153ea;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 16px;
+    padding: 12px 16px;
+    background: #7126b5;
+    color: white;
+    width: 100%;
+    /* margin-bottom: 40px; */
+}
+
+.button:active {
+    background-color: #a153ea;
+}
+
+.line {
+    display: flex;
+    text-align: center;
+    line-height: 0.1em;
+    margin: 20px 0 20px;
+    align-items: center;
+}
+
+.line hr {
+    width: 40%;
+    margin: auto;
+}
+
+.line2 {
+    margin: 20px 0 0px;
+}
+
+.line2 hr {
+    width: 90%;
+    margin: auto;
+}
+
+.buttonAuth {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.buttonAuth button {
+    cursor: pointer;
+    border: 2px solid #d0d0d0;
+    border-radius: 16px;
+    padding: 12px 16px;
+    background: white;
+    color: black;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttonAuth button:hover {
+    background: #cecece;
+}
+
+.buttonAuth button:active {
+    background: #a153ea;
+}
+
+.buttonAuth button {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #7126b5;
+}
+
+.footer a:hover {
+    color: #a153ea;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: flex;
+    }
+
+    .flexLeft {
+        flex: 100%;
+        height: 50%;
+        width: 100vw;
+        background-size: cover;
+    }
+
+    .flexRight {
+        /* flex: 100%; */
+        height: 100vh;
+    }
+}
