@@ -1,0 +1,1 @@
+export const TWO_HOURS = 1000 * 60 * 60 * 2;
